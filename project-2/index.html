@@ -2,8 +2,9 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Project-2</title>
+	<title>Fields-Of-Intrests</title>
 	<link rel="stylesheet" type="text/css" href="style.css">
+	
 </head>
 <body>
 	<h1>My Fields Of Intrests</h1>
@@ -70,5 +71,17 @@
 			</div>
 	</div>
 
+	<div class="container">
+			<div id="date">PublicationDate: Thu Sep 02 2021</div>
+			<div id="currentDate">CurrentDate: </div>
+	</div>
+
+
+
+	<script>
+		var d = new Date();
+		document.getElementById("currentDate").innerHTML += d.toDateString();
+	</script>
+	
 </body>
 </html>

@@ -73,4 +73,6 @@ p{
 	background-color: hsl(350, 40%, 0%);
 	color: hsl(50, 100%, 50%);
 }
-
+#date {
+		float: right;
+}
