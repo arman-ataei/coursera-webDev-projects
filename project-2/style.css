@@ -76,3 +76,7 @@ p{
 #date {
 		float: right;
 }
+
+#currentDate {
+	float: left;
+}
