@@ -163,7 +163,8 @@ a:hover {
 .col-sm-12 {width: 96.66%;margin: 15px 1.665%;}
 #footer{
 	background-color: black;
-	padding-bottom: 120px;
+	padding-bottom: 150px;
+	margin-bottom: 0px;
 	color: white;
  }
  #currentDate{
