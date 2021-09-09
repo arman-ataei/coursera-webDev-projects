@@ -93,13 +93,13 @@ a {
 	margin: 2rem;
 	text-decoration: none;
 	border: 1px solid white;
-	color: hsl(50, 100%, 50%);
-	
+	color: white;
+
 }
 a:hover {
-	border: 2px solid white;
+	box-shadow: 0 0 10px 3px white;
 	color: black;
-	background-color: hsl(50, 100%, 90%);
+	background-color: white;
 }
 /****** Coustom Classes ******/
 .container{
@@ -161,7 +161,7 @@ a:hover {
 .col-sm-9 {width: 75%;margin: 15px 1.665%;}
 .col-sm-10 {width: 83.33%;margin: 15px 1.665%;}
 .col-sm-11 {width: 91.66%;margin: 15px 1.665%;}
-.col-sm-12 {width: 100%;margin: 15px 1.665%;}
+.col-sm-12 {width: 96.66%;margin: 15px 1.665%;}
 
 }
 /****************** Tablet View ******************/
@@ -182,7 +182,7 @@ a:hover {
 .col-md-9 {width: 75%;margin: 15px 1.665%;}
 .col-md-10 {width: 83.33%;margin: 15px 1.665%;}
 .col-md-11 {width: 91.66%;margin: 15px 1.665%;}
-.col-md-12 {width: 100%;margin: 15px 1.665%;}
+.col-md-12 {width: 96.66%;margin: 15px 1.665%;}
 
 }
 /****************** Desktop View ******************/
@@ -204,6 +204,6 @@ a:hover {
 .col-lg-9 {width: 75%;margin: 15px 1.665%;}
 .col-lg-10 {width: 83.33%;margin: 15px 1.665%;}
 .col-lg-11 {width: 91.66%;margin: 15px 1.665%;}
-.col-lg-12 {width: 100%;margin: 15px 1.665%;}
+.col-lg-12 {width: 96.66%;margin: 15px 1.665%;}
 
 }
