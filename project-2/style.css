@@ -100,6 +100,7 @@ a:hover {
 	box-shadow: 0 0 10px 3px white;
 	color: black;
 	background-color: white;
+	cursor: pointer;
 }
 /****** Coustom Classes ******/
 .container{
@@ -114,7 +115,7 @@ a:hover {
 	background-color: hsl(350, 40%, 0%);
 	color: hsl(50, 100%, 50%);
 	margin-top: 30px;
-	
+	min-width: 261px;
 	
 }
 .spacer {
@@ -145,8 +146,9 @@ a:hover {
 .col-sm-1, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-sm-10, .col-sm-11, .col-sm-12 {
     float: left;
     border: 1px solid white;
-    min-width: 350px;
+    /*min-width: 380px;*/
   }
+
 .col-sm-1 {width: 5%;margin: 15px 1.665%;}
 .col-sm-2 {width: 13.33%; margin: 15px 1.665%;}
 .col-sm-3 {width: 22.66%; margin: 15px 1.665%;}
