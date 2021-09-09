@@ -7,81 +7,49 @@
 	
 </head>
 <body>
-	<h1>My Fields Of Intrests</h1>
+	<h1>My Fields Of Intrest</h1>
 	<div class="container">
-			<div class="column lg-4 md-4 sm-6">
-				
-				<h2>
-					Abstract Algebra
-				</h2>
+
+		<div class="row">
 			
-				
+			<div class="column col-lg-4 col-md-6 col-sm-12">
+				<h2 class = "color-1">Abstract Algebra</h2>
 				<p>
-					Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-					quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-					consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-					cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-					proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+					<dfn>Abstract Algebra</dfn> is the study of algebraic structures. Algebraic structures include groups, rings, fields, modules, vector spaces, lattices, and algebras.
 				</p>
-				
+				<a class="color-1" target="_blank" href="https://en.wikipedia.org/wiki/Abstract_algebra">wikipedia</a>
 			</div>
+			
 
-			<div class="column lg-4 md-4 sm-6">
-				<div class="right">
-				<h2>
-					Mathematical Logic
-				</h2>
-				</div>
+			
+			<div class="column col-lg-4 col-md-6 col-sm-12">
+				<h2 class = "color-2">Mathematical Logic</h2>
 				<p>
-					Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-					quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-					consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-					cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-					proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+					<dfn>Mathematical logic</dfn> is the study of logic within mathematics. Major subareas include model theory, proof theory, set theory, and recursion theory.
 				</p>
+				<a class="color-2" target="_blank" href="https://en.wikipedia.org/wiki/Mathematical_logic">wikipedia</a>
 			</div>
-
-			<div class="column lg-4 md-4 sm-6">
-				<div class="right">
-				<h2>
-					Computer Science
-				</h2>
-				</div>
+			
+			
+			<div class="column col-lg-4 col-md-9 col-sm-12">
+				<h2 class = "color-4">Web Development</h2>
 				<p>
-					Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-					quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-					consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-					cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-					proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+					<dfn>Web development</dfn>, Among Web professionals usually refers to the main non-design aspects of building Web sites: writing markup and coding.
 				</p>
+				<a class="color-3" target="_blank" href="https://en.wikipedia.org/wiki/Web_development">wikipedia</a>
 			</div>
-
-			<div class="column lg-4 md-4 sm-6">
-				<div class="right">
-				<h2>
-					Web Development
-				</h2>
-				</div>
-				<p>
-					Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quo repellat nihil magni, expedita quasi commodi sapiente tempore saepe consequuntur adipisci quod reiciendis, dicta, eligendi omnis quas voluptate at ratione. Commodi.
-				</p>
-			</div>
-	</div>
-
-	<div class="container">
-			<div id="date">PublicationDate: Thu Sep 02 2021</div>
+			
+		</div> <!-- end of row -->
+		
+		<div class="spacer"></div>
+	</div>	<!-- container ends -->
+	<div id="Dates">
+			<div id="pubDate">PublicationDate: Thu Sep 02 2021</div>
 			<div id="currentDate">CurrentDate: </div>
-	</div>
-
-
-
+		</div>
 	<script>
 		var d = new Date();
 		document.getElementById("currentDate").innerHTML += d.toDateString();
 	</script>
-	
 </body>
 </html>

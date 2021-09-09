@@ -4,8 +4,28 @@
 
 
 /*my colors*/
+:root {
+  --color-1: hsl(350, 40%, 30%);
+  --color-2: hsl(79, 39%, 30%);
+  --color-3: hsl(170, 39%, 30%);
+  --color-4: hsl(260, 39%, 30%);
+  
+}
+.color-1{
+	background-color: var(--color-1);
+}
 
+.color-2{
+	background-color: var(--color-2);
+}
 
+.color-3{
+	background-color: var(--color-3);
+}
+
+.color-4{
+	background-color: var(--color-4);
+}
 
 
 /****************** Base Styles ******************/
@@ -24,14 +44,15 @@ containing two sections:
 body{
 	font-size: 16px;
 	margin-top: 20px;
+	background-color: hsl(0, 50%, 20%);
 }
 
 h1 {
 	text-align: center ;
 	font-size: 2.625rem;
-	color: black;
+	color: white;
  	/*text-shadow: 2px 2px black;*/
- 	text-decoration: solid underline black 5px;
+ 	text-decoration: solid underline white 5px;
  	text-underline-position: under;
  	font-family: 'Playball', cursive;
 }
@@ -39,44 +60,150 @@ h1 {
 h2 {
 	text-align: center;
 	border: 1px solid white;
+	border-top: none;
+	border-right: none;
 	padding: .7rem;
     font-size: 1.875rem;
     font-family: 'Playball', cursive;
     color: white;
     float: right;
-    width: 350px;
-    background-color: hsl(350, 40%, 30%);
-    box-shadow: 0px 0px 6px  white;
-   
+    /*width: 350px;*/
+    /*box-shadow: 0px 0px 6px  white;*/
 }
 
 p{
 	font-size: 1.5rem;
 	clear: right;
 	padding: 2rem;
-	width: 90%;
+	/*width: 90%;*/
 	text-align: justify; /* equal line width for multiline paragraphs! */
 	font-family: 'Bad Script', cursive;
 
+
 }
 
+dfn {
+	font-weight: bold;
+}
+a {
+	float: right;
+	clear: right;
+	font-size: 1.5rem;
+	padding: 1rem;
+	margin: 2rem;
+	text-decoration: none;
+	border: 1px solid white;
+	color: hsl(50, 100%, 50%);
+	
+}
+a:hover {
+	border: 2px solid white;
+	color: black;
+	background-color: hsl(50, 100%, 90%);
+}
 /****** Coustom Classes ******/
 .container{
-	margin: 30px 20px;
-}
-.column {
-	position: relative;
-	border: 1px solid black;
-	height: auto;
-	margin: 20px 0;
-	box-shadow: ;
-	background-color: hsl(350, 40%, 0%);
-	color: hsl(50, 100%, 50%);
-}
-#date {
-		float: right;
+      margin: 100px auto;
 }
 
-#currentDate {
-	float: left;
+.row {
+	 margin: 20px 40px;
+}
+
+.column{
+	background-color: hsl(350, 40%, 0%);
+	color: hsl(50, 100%, 50%);
+	margin-top: 30px;
+}
+.spacer {
+	position: relative;
+	clear: both;
+	padding:90px;
+}
+#Dates {
+	position: relative;
+	clear: both;
+	bottom: 90px;
+	color: white;
+	margin: 0 5%;
+	font-size:1.5rem;
+	
+}
+#pubDate {
+	float: right;
+}
+/****************** Mobile View ******************/
+@media only screen and (max-width : 767px){
+.col-sm-1, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-sm-10, .col-sm-11, .col-sm-12 {
+    float: left;
+    border: 1px solid white;
+  }
+  #currentDate{
+  	float: right;
+  	clear: right;
+  	width: 100%;
+  	text-align: center;
+  }
+  #pubDate {
+	text-align: center;
+	width: 100%;
+	text-align: center;
+}
+
+.col-sm-1 {width: 5%;margin: 15px 1.665%;}
+.col-sm-2 {width: 13.33%; margin: 15px 1.665%;}
+.col-sm-3 {width: 22.66%; margin: 15px 1.665%;}
+.col-sm-4 {width: 30%; margin: 15px 1.665%;}
+.col-sm-5 {width: 38.33%;margin: 15px 1.665%;}
+.col-sm-6 {width: 46.66%;margin: 15px 1.665%;}
+.col-sm-7 {width: 58.33%;margin: 15px 1.665%;}
+.col-sm-8 {width: 66.66%;margin: 15px 1.665%;}
+.col-sm-9 {width: 75%;margin: 15px 1.665%;}
+.col-sm-10 {width: 83.33%;margin: 15px 1.665%;}
+.col-sm-11 {width: 91.66%;margin: 15px 1.665%;}
+.col-sm-12 {width: 100%;margin: 15px 1.665%;}
+
+}
+/****************** Tablet View ******************/
+@media only screen and (min-width : 768px) and (max-width: 991px){
+.col-md-1, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-10, .col-md-11, .col-md-12 {
+    float: left;
+    border: 1px solid white;
+  }
+
+.col-md-1 {width: 5%;margin: 15px 1.665%;}
+.col-md-2 {width: 13.33%; margin: 15px 1.665%;}
+.col-md-3 {width: 22.66%; margin: 15px 1.665%;}
+.col-md-4 {width: 30%; margin: 15px 1.665%;}
+.col-md-5 {width: 38.33%;margin: 15px 1.665%;}
+.col-md-6 {width: 46.66%;margin: 15px 1.665%;}
+.col-md-7 {width: 58.33%;margin: 15px 1.665%;}
+.col-md-8 {width: 66.66%;margin: 15px 1.665%;}
+.col-md-9 {width: 75%;margin: 15px 1.665%;}
+.col-md-10 {width: 83.33%;margin: 15px 1.665%;}
+.col-md-11 {width: 91.66%;margin: 15px 1.665%;}
+.col-md-12 {width: 100%;margin: 15px 1.665%;}
+
+}
+/****************** Desktop View ******************/
+
+@media only screen and (min-width : 992px){
+.col-lg-1, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-lg-10, .col-lg-11, .col-lg-12 {
+    float: left;
+    border: 1px solid white;
+   
+  }
+.col-lg-1 {width: 5%;margin: 15px 1.665%;}
+.col-lg-2 {width: 13.33%; margin: 15px 1.665%;}
+.col-lg-3 {width: 22.66%; margin: 15px 1.665%;}
+.col-lg-4 {width: 30%; margin: 15px 1.665%;}
+.col-lg-5 {width: 38.33%;margin: 15px 1.665%;}
+.col-lg-6 {width: 46.66%;margin: 15px 1.665%;}
+.col-lg-7 {width: 58.33%;margin: 15px 1.665%;}
+.col-lg-8 {width: 66.66%;margin: 15px 1.665%;}
+.col-lg-9 {width: 75%;margin: 15px 1.665%;}
+.col-lg-10 {width: 83.33%;margin: 15px 1.665%;}
+.col-lg-11 {width: 91.66%;margin: 15px 1.665%;}
+.col-lg-12 {width: 100%;margin: 15px 1.665%;}
+
 }
