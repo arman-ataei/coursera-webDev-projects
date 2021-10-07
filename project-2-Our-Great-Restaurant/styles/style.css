@@ -1,0 +1,212 @@
+body{
+	background-color: #A69200;
+}
+a{
+	color: white;
+}
+a:hover{
+	color: hsl(0, 100%, 50%);
+}
+.navbar{
+	background-color:#0975C8 ;
+	height: 175px;
+	color: #BBC809;
+	border: none;
+	position: relative;
+}
+.logo-lg{
+	margin-top: 20px;
+}
+
+.navbar-nav {
+	margin-top: 60px;
+	margin-left: 7%;
+	margin-right: 7%;
+	
+}
+.activ{
+	border:2px solid white;
+}
+
+#nav-list{
+	font-size: 2em;
+}
+.navbar-default .navbar-nav > li > a{
+	color: #BBC809;
+	margin-right: 2px;
+}
+
+ul.navbar-right{
+	font-size: 1.5em;
+}
+.navbar-default .navbar-nav > li > a:focus, .navbar-default .navbar-nav > li > a:hover{
+	color: white;
+	border:2px solid white;
+}
+.navbar{
+	margin-bottom: 0px;
+}
+
+.jumbotron{
+	padding: 0;
+}
+.jumbotron > img{
+	width: 100%;
+}
+.logo-lg{
+	box-sizing: border-box;
+	height: 151px;
+	margin-top: 20px;
+	margin-left: 20px;
+}
+
+.navbar ul li span{
+	/*font-size: 1.2em;*/
+	margin-right: 4px;
+}
+div.row:first-child{
+	position: relative;
+
+}
+
+.meal-outer{
+	position: relative;
+	color: white;
+	margin-top: 30px;
+	margin-bottom: 30px;
+}
+.meal-inner{
+	height: 650px;
+	background-color: blue;
+	border: 2px solid white;
+	border-radius: 8px;
+	/*box-shadow: ;*/
+}
+.blue-bg{
+	text-align: center;
+	width: 100%;
+	margin: 0 auto;
+}
+.blue-bg h3{
+	    border: 2px solid white;
+	    width: 50%;
+	    margin: 35px auto;
+	    padding: 20px;
+	    border-radius: 8px;
+}
+.red-bg{
+	margin: 0 auto;
+    margin-top: 0px;
+	text-align: center;
+	margin-top: -60px;
+	background-color: red;
+	width: 50%;
+	padding: 20px;
+	border: 2px solid white;
+	border-radius: 7px;
+}
+
+.navbar-header a:nth-child(2){
+	float: left;
+	margin-left: 10px;
+	padding: 5px;
+}
+.navbar-header a:nth-child(2) span:first-child{
+	color: black;
+	font-size: 3rem;
+}
+
+.navbar-header a:nth-child(2) span:nth-child(2){
+	color: red;
+	font-size: 2rem;
+}
+.navbar-header a:nth-child(2) span:nth-child(3){
+	color: white;
+	font-size: 3.2rem;
+}
+.navbar-header a:nth-child(2) span:nth-child(4){
+	color: white;
+	font-size: 2.2rem;
+}
+/*---------------------NavBar Views on different screen sizes--------*/
+@media screen and (max-width: 1510px){
+	.navbar-nav {
+	margin-left: 20px;
+	margin-right: 40px;
+	}
+	
+}
+
+@media screen and (max-width: 1219px){
+	.navbar-nav {
+	margin-left: 10px;
+	margin-right: 40px;
+	}
+	ul.navbar-right{
+		display: none;
+	}
+	/*the ul element which has a class of nav and is the second child of its parent!*/
+	#nav-list{
+		float: right;
+		font-size: 1.1em;
+	}
+	.logo-lg{
+		height: 130px;
+		margin-left: 20px;
+		margin-top: 35px;
+	}
+}
+
+@media screen and (max-width: 991px){    
+
+	.meal-inner{
+		height: 550px;
+	}
+
+	.row .col-md-4:nth-child(3) .blue-bg h3{
+		width: 25%;
+	}
+
+	.red-bg{
+		padding: 10px;
+		margin-top: -30px;
+	}
+
+	.row .col-md-4:nth-child(3) .red-bg{
+		width: 25%;
+	}
+}
+
+
+@media screen and (max-width: 767px){    
+
+	.meal-inner{
+		height: 550px;
+	}
+
+	.row .col-md-4:nth-child(3) .blue-bg h3{
+		width: 50%;
+	}
+
+	.red-bg{
+		padding: 10px;
+		margin-top: -30px;
+	}
+
+	.row .col-md-4:nth-child(3) .red-bg{
+		width: 50%;
+	}
+	#nav-list{
+		position: relative;
+		background-color: rgba(1,1,1,.8);
+		width: 100%;
+		margin: 0 auto;
+	}
+	.navbar-collapse{
+		padding: 0;
+	}
+	.navbar{
+		margin-bottom: 70px;
+		height: fit-content;
+	}
+}
