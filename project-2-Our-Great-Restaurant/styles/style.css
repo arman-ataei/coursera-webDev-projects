@@ -5,7 +5,10 @@ a{
 	color: white;
 }
 a:hover{
-	color: hsl(0, 100%, 50%);
+	text-decoration: none;
+}
+.hide-default{
+	display: none;
 }
 .navbar{
 	background-color:#0975C8 ;
@@ -13,6 +16,7 @@ a:hover{
 	color: #BBC809;
 	border: none;
 	position: relative;
+	box-shadow: 0 1px 10px black;
 }
 .logo-lg{
 	margin-top: 20px;
@@ -49,6 +53,7 @@ ul.navbar-right{
 
 .jumbotron{
 	padding: 0;
+	box-shadow: 0 2px 10px black;
 }
 .jumbotron > img{
 	width: 100%;
@@ -77,12 +82,14 @@ div.row:first-child{
 }
 .meal-inner{
 	height: 650px;
-	background-color: blue;
+	background-color: hsl(197, 69%, 52%);
 	border: 2px solid white;
 	border-radius: 8px;
 	/*box-shadow: ;*/
+	box-shadow: 0px 15px 45px #000;
 }
 .blue-bg{
+	position: relative;
 	text-align: center;
 	width: 100%;
 	margin: 0 auto;
@@ -99,11 +106,28 @@ div.row:first-child{
     margin-top: 0px;
 	text-align: center;
 	margin-top: -60px;
-	background-color: red;
+	background-color: hsl(347, 97%, 55%);
 	width: 50%;
 	padding: 20px;
 	border: 2px solid white;
 	border-radius: 7px;
+	box-shadow: 0px 15px 25px #000;
+}
+@media screen and (max-width: 1200px){
+	.red-bg{
+		width: 60%;
+	}
+
+
+}
+
+.meal-outer a:hover .red-bg{
+	background-color: hsl(347, 97%, 30%);
+}
+
+.meal-outer a:hover{
+	color: white;
+	text-shadow: 1px 1px white;
 }
 
 .navbar-header a:nth-child(2){
@@ -128,6 +152,30 @@ div.row:first-child{
 	color: white;
 	font-size: 2.2rem;
 }
+.future-img{
+	position: relative;
+	padding: 20px 25px;
+	padding-top: 35px;
+}
+.future-img img{
+	width: 100%;
+
+}
+
+
+@media screen and (min-width: 1200px){
+	.future-img{
+	padding-left: 20px;
+	padding-right: 20px;
+   }
+
+	.future-img img{
+	width: 80%;
+   }
+
+
+}
+
 /*---------------------NavBar Views on different screen sizes--------*/
 @media screen and (max-width: 1510px){
 	.navbar-nav {
@@ -157,7 +205,7 @@ div.row:first-child{
 	}
 }
 
-@media screen and (max-width: 991px){    
+@media screen and (max-width: 992px){    
 
 	.meal-inner{
 		height: 550px;
@@ -175,13 +223,31 @@ div.row:first-child{
 	.row .col-md-4:nth-child(3) .red-bg{
 		width: 25%;
 	}
+	.future-img {
+	padding: 60px 50px;
+	padding-top: 0;
+   }
+   .col-sm-12 img:first-child{
+   	width: 100%;
+   	display: none;
+	}
+
+   .col-sm-12 img:nth-child(2){
+   	width: 100%;
+   	display: block;
+	}
+   .col-sm-12 .future-img{
+   	
+   	padding-top: 0;
+   }
+
 }
 
 
 @media screen and (max-width: 767px){    
-
+	
 	.meal-inner{
-		height: 550px;
+		height: fit-content;
 	}
 
 	.row .col-md-4:nth-child(3) .blue-bg h3{
@@ -208,5 +274,26 @@ div.row:first-child{
 	.navbar{
 		margin-bottom: 70px;
 		height: fit-content;
+	}
+
+	.future-img{
+	position: relative;
+	padding: 20px 25px;
+	/*padding-top: 35px;*/
+	margin-bottom: 50px;
+	}
+	img.visible-xs{
+
+		width: 87%;
+		margin: 0 auto;
+		border: 1px solid black;
+	}
+
+
+   .hide-xs{
+		display: none;
+	}
+	.col-sm-12 img:nth-child(2){
+		display: none;
 	}
 }
