@@ -284,7 +284,8 @@ div.row:first-child{
 
 @media screen and (max-width: 767px){    
 	.container h1{
-		margin-top: 150px;
+		margin-top: 50px;
+		/*margin-top: 150px;*/
 		font-size: 5rem;
 	}
 	.meal-outer{
@@ -318,7 +319,7 @@ div.row:first-child{
 	}
 	.navbar{
 		height: fit-content;
-		position: fixed;
+		/*position: fixed;*/
 		width: 100%;
 		z-index: 9;
 		opacity: 95%;
