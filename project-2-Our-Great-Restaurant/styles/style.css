@@ -74,6 +74,11 @@ div.row:first-child{
 	position: relative;
 
 }
+.container h1{
+	color: whitesmoke;
+	font-weight: bolder;
+	font-size: 6rem;
+}
 
 .meal-outer{
 	position: relative;
@@ -278,9 +283,12 @@ div.row:first-child{
 
 
 @media screen and (max-width: 767px){    
-	
+	.container h1{
+		margin-top: 150px;
+		font-size: 5rem;
+	}
 	.meal-outer{
-		margin-top: 100px;
+		margin-top: 50px;
 	}
 
 	.meal-inner{
