@@ -176,6 +176,38 @@ div.row:first-child{
 
 }
 
+
+.footer{
+	height: 193px;
+	width: 100%;
+	background-color: #0975C8;
+	margin-top: 90px;
+	position: relative;
+	bottom: 0px;
+	color: yellow;
+	font-size: 20px;
+}
+.footer img{
+	margin-top: 25px;
+}
+.footer div.row:nth-child(2){
+	font-weight: bold;
+	margin-top: -25px;
+	margin-bottom: 0;
+}
+.footer span{
+	font-weight: bold;
+	color: yellow;
+	font-size: 25px;
+}
+.footer a{
+	color: #B50A0A;
+	font-weight: bold;
+	margin: 0 9px;
+}
+.footer a:hover{
+	color: white;
+}
 /*---------------------NavBar Views on different screen sizes--------*/
 @media screen and (max-width: 1510px){
 	.navbar-nav {
@@ -246,6 +278,10 @@ div.row:first-child{
 
 @media screen and (max-width: 767px){    
 	
+	.meal-outer{
+		margin-top: 100px;
+	}
+
 	.meal-inner{
 		height: fit-content;
 	}
@@ -260,7 +296,7 @@ div.row:first-child{
 	}
 
 	.row .col-md-4:nth-child(3) .red-bg{
-		width: 50%;
+		width: 60%;
 	}
 	#nav-list{
 		position: relative;
@@ -272,9 +308,14 @@ div.row:first-child{
 		padding: 0;
 	}
 	.navbar{
-		margin-bottom: 70px;
 		height: fit-content;
+		position: fixed;
+		width: 100%;
+		z-index: 9;
+		opacity: 95%;
 	}
+
+
 
 	.future-img{
 	position: relative;
@@ -283,10 +324,8 @@ div.row:first-child{
 	margin-bottom: 50px;
 	}
 	img.visible-xs{
-
 		width: 87%;
 		margin: 0 auto;
-		border: 1px solid black;
 	}
 
 
@@ -296,4 +335,5 @@ div.row:first-child{
 	.col-sm-12 img:nth-child(2){
 		display: none;
 	}
+
 }
