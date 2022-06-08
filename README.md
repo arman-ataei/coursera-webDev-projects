@@ -10,7 +10,7 @@ project1: My Fields of intrests
 project2: Our Great Restaurant
 
 			notes : 
-					_Designed by me! 
+					_Designed by me, with adobe Xd. 
 					_Responsive Three-Column using Bootstrap 3
 					_Some Links may not work!
 
