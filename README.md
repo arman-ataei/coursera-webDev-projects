@@ -16,3 +16,5 @@
 
 ## project3: [IIFE](https://arman-ataei.github.io/Coursera-WebDevelopment-projects/project3-Some-Js-Code-IIFE/) 
 					
+			notes :
+					_Immidiately Invoked Functions
